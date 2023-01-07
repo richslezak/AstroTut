@@ -24,6 +24,15 @@ li {
   list-style: none;
 }
 
+a,
+a:active {
+  color: #4c1d95;
+}
+
+/* a:focus {
+  background-color: transparent;
+} */
+
 /* Light/Dark mode styles */
 
 .dark,
@@ -37,8 +46,7 @@ li {
   color: #fff;
 }
 
-.dark .nav-links a:hover,
-.dark a:focus {
+.dark .nav-links a:hover {
   background-color: #6965bb;
 }
 
@@ -99,8 +107,7 @@ li {
   text-transform: uppercase;
 }
 
-.nav-links a:hover,
-a:focus {
+.nav-links a:hover {
   background-color: #4c1d95;
   color: #fff;
 }
