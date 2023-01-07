@@ -24,7 +24,26 @@ li {
   list-style: none;
 }
 
+/* Light/Dark mode styles */
+
+.dark,
+.dark body {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a,
+.dark a {
+  color: #fff;
+}
+
+.dark .nav-links a:hover,
+.dark a:focus {
+  background-color: #6965bb;
+}
+
 /* tag styles */
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -48,6 +67,7 @@ li {
 /* nav styles */
 
 .hamburger {
+  display: inline-block;
   padding-right: 20px;
   cursor: pointer;
 }
@@ -81,7 +101,8 @@ li {
 
 .nav-links a:hover,
 a:focus {
-  background-color: #ff9776;
+  background-color: #4c1d95;
+  color: #fff;
 }
 
 .expanded {
