@@ -29,10 +29,6 @@ a:active {
   color: #4c1d95;
 }
 
-/* a:focus {
-  background-color: transparent;
-} */
-
 /* Light/Dark mode styles */
 
 .dark,
@@ -42,7 +38,8 @@ a:active {
 }
 
 .dark .nav-links a,
-.dark a {
+.dark a,
+.dark .skill {
   color: #fff;
 }
 
