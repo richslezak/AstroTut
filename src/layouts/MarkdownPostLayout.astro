@@ -10,27 +10,13 @@ const { frontmatter } = Astro.props;
   <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
   <slot />
   <ul class="tags">
-    {frontmatter.tags.map((tag) => <li>{tag}</li>)}
+    {
+      frontmatter.tags.map((tag) => (
+        <li>
+          <a href={`/tags/${tag}`}>{tag}</a>
+        </li>
+      ))
+    }
   </ul>
+  <p><a href="/rss.xml">RSS Feed</a></p>
 </BaseLayout>
-
-<style>
-  .tags {
-    margin-top: 50px;
-    padding-left: 0;
-    list-style: none;
-  }
-
-  .tags li {
-    display: inline-block;
-    margin-right: 1.5rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    background-color: #4c1d95;
-    border-radius: 20px;
-  }
-
-  .tags li:last-child {
-    margin-right: 0;
-  }
-</style>
